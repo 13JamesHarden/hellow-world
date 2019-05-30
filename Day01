@@ -1,0 +1,64 @@
+package com.runoob.test;
+
+public class HelloWorld {
+    public static void main(String []args) {
+        System.out.println("Hello World");
+    }
+}
+
+说明：class：类名
+      大括号里面要缩进，空格用Tab
+      static：静态的
+      void：空的
+      main：主要的
+      string：字符串
+      args：arguments参数  s表多个
+      System.out.print：向系统外面输出
+      
+      
+第一步：编写Java源代码文件   文件后缀名是 .java 如Helleo.java
+第二步：编译：使用javac命令（Dos命令窗口Win+R）（检查java语法格式。如编译成功，则生成一个字节码文件：.class；若编译失败，则改错后再重新编译）
+        当出现“javac”不是内部或外部命令时，也不是可运作的程序或批处理文件，解决办法：安装JDK
+        JDK环境变量的配置：（1）将bin目录进行复制，如：C:\Programe Files\Java\jdk1.8.0_101\bin 
+                         （2）配置系统环境变量path     注意：当环境变量配置成功后，则必须将之前的DOS命令窗口关闭。
+                         （3）在源文件（.class）目录下重新打开cmd命令窗口，使用javac命令会产生.class文件
+第三步：运行
+        Java  Hellow直接运行（规定）
+        
+源代码的组成部分：（1）编写类也叫外部结构
+                （2）编写main方法，也叫做主方法或程序的入口
+                注意：编写在类中，且在一个类中的main方法是可有可无的。如果编写main方法，则在一个类中最多有一个。
+                （3）编写代码
+                 注意：暂时将代码编写在入口中；可以在入口中编写N条语句语句也就是以英语分号作为结束；建议：一行编写一条语句
+输出语句：System.out.print(‘编写大小写字母、汉字、数字及特殊符号，但输出后不换行。要换行print后加ln，输出后换行’)；
+注释：作用：解释说明，在程序中并不运行
+      目的：增加程序的可读性
+      分类：（1）单行注释//
+            （2）多行注释/* 注释内容 */
+            （3）文档注释/** 注释内容 */    （开发环境用的多一些）
+public class 与 class的区别
+（1）一个类前面的public是可有可无的
+（2）如果一个类使用 public 修饰则文件名必须与类名一致
+（3）如果一个类前面没有使用public 修饰，则文件名可以与类名不一致，当编译成功后会生成对应类名的字节码文件
+（4）一个类中的main方法是可有可无的，如果没有编写main方法，编译成功，但不能运行
+（5）一个源文件中编写任意多个类，当编译成功后会自动生成对应类的个数的字节码文件，并可以运行每个自己的文件（必须保证有入口）
+（6）一个源文件中最多有一个类前面使用public 修饰
+
+classpath
+注意：当在默认值情况下，运行某个字节码文件时在当前目录下找，如果找到运行的字节码文件则执行，否则报错。
+配置classpath：临时配置classpath
+              （1）使用set命令完成临时配置classpath
+              set classpath=D:\course\JavaProjects\02-javaSE\day02
+              set classpath=D:\course\JavaProjects\02-javaSE\day02；
+              set classpath=D:\course\JavaProjects；D:\course
+               (2) 使用set命令完成查看是否临时配置classpath
+               set classpath
+               （3）使用set命令完成是否删除classpath配置
+                set classpath=
+              永久配置classpath
+              在属性设置环境变量
+              
+
+      
+      
+      
