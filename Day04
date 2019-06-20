@@ -13,3 +13,47 @@ if else选择结构：
                    }else{
                      代码块2（选择性执行）
                    }
+多重if选择结构：当做两种或两种以上的情况时，则可以使用多重if选择结构完成
+  （3）语法格式：if（条件）{
+                     代码块1
+                   }else if(条件2){
+                     代码块2
+                   }
+       注意：1.多重if选择结构中的else if（）{}是可以有任意多个，根据情况编写
+            2.多重if选择结构中的条件顺序可以颠倒，但是可能会影响程序的运行结果;解决办法：当颠倒时，条件必须编写严谨
+            3.在多重if中else{}是可有可无的，如果有则编写在多重if的最后，并且最多编写一个，当所有条件都不满足时，则执行else中的代码块
+if嵌套:
+    if(){
+        if(){
+        
+        }else if(){
+        
+        }
+    }else{
+        if(){
+        
+        }
+    }
+switch case:
+    当做等值操作时，可以使用switch（转换） case
+    语法格式：
+    switch(表达式){
+    case  常量值1：
+      break；
+    case  常量值2：
+      break；//表示中断，当遇到break则执行switch case外面的语句
+    default：
+    }
+    switch case中的表达式可以byte、short、int、char，在JDK7.0及以后，还可以是String类型，枚举
+    在switch中编译任意多个case
+    case后面常量值的类型必须与表达式的类型一致
+    default是可有可无的，如果有则一个switch中最多编写一个default，当所有case都不满足时则执行default
+ if和switch case的区别：
+   （1）多重if：可以做等值操作也可以做区间操作
+   （2）switch case：只能做等值操作
+    
+    
+    
+    
+    
+    
